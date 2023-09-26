@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #598cb6;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+}
+
+.header h2 {
+	text-align: center;
+	margin: 0;
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.inputs {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.inputs label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.inputs input {
+	border: 2px solid #bdbdbd;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.inputs input:focus {
+	outline: 0;
+	border-color: rgb(166, 195, 228);
+}
+
+.inputs.success input {
+	border-color: #2ecc71;
+}
+
+.inputs.error input {
+	border-color: #e74c3c;
+}
+
+.inputs .error {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.inputs.error .error {
+	visibility: visible;
+}
+
+.form button {
+	cursor: pointer;
+	background-color: #289bd1;
+	border: 2px solid #289bd1;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
